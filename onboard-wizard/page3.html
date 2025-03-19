@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudnix Shop Onboarding - Add Product</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .onboarding-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .onboarding-header {
+            text-align: left;
+            margin-bottom: 40px;
+            color:#007bff;
+        }
+
+        .onboarding-header h1 {
+            color: #007bff;
+            /* Blue as primary color */
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            margin: left;
+        }
+
+        .onboarding-step {
+            margin-bottom: 30px;
+        }
+
+        .onboarding-step h2 {
+            color: #0a6279;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .add-product {
+            margin-bottom: 30px;
+            /* Added scrollbar styling */
+            max-height: 400px;
+            /* Adjust as needed */
+            overflow-y: auto;
+            padding-right: 20px;
+            /* To make space for the scrollbar */
+        }
+
+        .add-product label {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .add-product input,
+        .add-product textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .add-product .product-image {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .add-product .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .complete-button {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            /* Added margin for spacing */
+        }
+
+        .complete-button a {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .complete-button a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="onboarding-container">
+            <div class="onboarding-header">
+                <h2>Let's Customize Your Shopnix Store</h2>
+                <h4>Add Your First Product<h4>
+            </div>
+
+            <div class="onboarding-step add-product">
+                <h6>Basic Details</h6>
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName">
+
+                <label for="productDescription">Product Description:</label>
+                <textarea id="productDescription" name="productDescription" rows="4"></textarea>
+
+                <label for="productImage">Product Image:</label>
+                <input type="file" id="productImage" name="productImage">
+                <div class="product-image">
+                    <img src="cactus.jpg" alt="Product Preview">
+                </div>
+
+                <h3>Pricing Details</h3>
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price">
+
+                <label for="discountedPrice">Discounted Price:</label>
+                <input type="number" id="discountedPrice" name="discountedPrice">
+
+                <label for="taxRate">Tax Rate:</label>
+                <input type="number" id="taxRate" name="taxRate">
+
+                <h3>Inventory</h3>
+                <label for="stockQuantity">Stock Quantity:</label>
+                <input type="number" id="stockQuantity" name="stockQuantity">
+
+                <label for="lowStockThreshold">Low Stock Threshold:</label>
+                <input type="number" id="lowStockThreshold" name="lowStockThreshold">
+
+                <h3>Shipping</h3>
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" name="weight">
+
+                <label for="dimensions">Dimensions:</label>
+                <input type="text" id="dimensions" name="dimensions">
+
+                <label for="shippingCost">Shipping Cost:</label>
+                <input type="number" id="shippingCost" name="shippingCost">
+
+                <h3>Additional Information</h3>
+                <label for="additionalInfo">Additional Information:</label>
+                <textarea id="additionalInfo" name="additionalInfo" rows="4"></textarea>
+
+                <label for="SKU">SKU:</label>
+                <input type="text" id="SKU" name="SKU">
+
+                <label for="barcode">Barcode:</label>
+                <input type="text" id="barcode" name="barcode">
+
+                <label for="manufacturer">Manufacturer:</label>
+                <input type="text" id="manufacturer" name="manufacturer">
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="page2.html">Previous</a>
+            </div>
+
+            <div class="complete-button">
+                <a href="#">Complete Onboarding</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // You can add jQuery functionality here if needed, such as handling theme selection or image previews.
+        // For example, to preview the selected image:
+        $(document).ready(function() {
+            $('.complete-button a').click(function(event) {
+                event.preventDefault(); // Prevent default link behavior initially
+
+                if (confirm("Are you sure you want to complete onboarding?")) {
+                    // User clicked "OK", navigate to success page
+                    window.location.href = "success.html";
+                } else {
+                    // User clicked "Cancel", do nothing (stay on the page)
+                }
+            });
+            $('#productImage').change(function(e) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.product-image img').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(this.files[0]);
+            });
+        });
+    </script>
+</body>
+
+</html>

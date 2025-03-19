@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Mobile Number</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .verification-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .verification-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .verification-header h2 {
+            color: #3c3f42;
+            font-size: 2rem;
+        }
+
+        .verification-message {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .otp-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button-group button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #resend-otp {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        #edit-mobile {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        #lets-go {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        #lets-go:hover {
+            background-color: #0056b3;
+        }
+
+        .form-text {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="verification-container">
+            <div class="verification-header">
+                <h1>Create Store</h1>
+            </div>
+            <div class="verification-message">
+                <p>Please enter the 4-digit code sent to your mobile number.</p>
+            </div>
+            <input type="text" id="otp" class="otp-input" placeholder="Enter OTP">
+            <div class="button-group">
+                <button id="resend-otp">Resend OTP</button>
+                <button id="edit-mobile">Edit mobile</button>
+            </div>
+            <div class="form-text">
+                <button id="lets-go">LETS GO</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //  OTP verification logic
+            $("#lets-go").click(function() {
+                // In a real application, you would:
+                // 1. Get the OTP from the input field: $("#otp").val()
+                // 2. Send the OTP to your backend for verification (AJAX call)
+                // 3. If verification is successful:
+                //   window.location.href = "loading.html"; // Redirect to loading page
+                // 4. If verification fails:
+                //    // Display an error message to the user
+                // For this example, we'll just navigate to loading.html
+                window.location.href = "loading.html";
+            });
+
+            $("#resend-otp").click(function() {
+                // Placeholder for Resend OTP logic
+                // In a real application, you would:
+                // 1. Send a request to your backend to resend the OTP (AJAX call)
+                // 2. Display a message to the user indicating that the OTP has been resent
+                alert("Resend OTP logic needs to be implemented on the backend.");
+            });
+
+            $("#edit-mobile").click(function() {
+                // Placeholder for Edit Mobile logic
+                // In a real application, you would:
+                // 1. Redirect the user to a page or show a modal where they can edit their mobile number
+                alert("Edit Mobile logic needs to be implemented.");
+            });
+        });
+    </script>
+</body>
+
+</html>

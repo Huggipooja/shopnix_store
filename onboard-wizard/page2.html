@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudnix Shop Onboarding - Type & Category</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .onboarding-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .onboarding-header {
+            text-align: left;
+            margin-bottom: 40px;
+            color:#096da7;
+        }
+
+        .onboarding-header h1 {
+            color: #007bff;
+            /* Blue as primary color */
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .onboarding-step {
+            margin-bottom: 30px;
+        }
+
+        .onboarding-step h2 {
+            color: #096da7;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .product-type-category {
+            margin-bottom: 30px;
+        }
+
+        .product-type-category label {
+            display: block;
+            
+        }
+
+        .product-type-category input,
+        .product-type-category select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .product-type-category .flow-chart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .flow-chart div {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 0 10px;
+            background-color: #e9ecef;
+        }
+
+        .flow-chart div:nth-child(2) {
+            background-color: #cce5ff;
+        }
+
+        .flow-chart div:nth-child(3) {
+            background-color: #d4edda;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="onboarding-container">
+            <div class="onboarding-header">
+                <h2>Let's customize your shopnix store</h2>
+                <p>Add a Type, Category and Sub-category</p>
+            </div>
+
+            <div class="onboarding-step product-type-category">
+
+                <label for="productType">Add a product type</label>
+                <input type="text" id="productType" name="productType">
+                <label for="category">Add a Category(optional)</label>
+                <input type="text" id="category" name="category">
+                <label for="sub-categotry">Add a Sub-Category(optional)</label>
+                <input type="text" id="sub-category" name="sub-category">
+                <div class="flow-chart">
+                    <div>Category and Type</div>
+                    <div>Set Content</div>
+                    <div>Add Product</div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="page1.html">Previous</a>
+                <a href="page3.html">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
